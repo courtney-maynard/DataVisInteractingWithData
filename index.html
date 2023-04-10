@@ -1,26 +1,89 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>InteractingWithDataPage</title>
-    </head>
 
-    <body>
-    <div>
-        <div>
-            <h2>partone</h2>
-            <iframe src='categories.html' title="categoriesPlot" width = "80%" height = "80%" frameBorder="0"></iframe> 
-        </div>
+<head>
+  <title>InteractingWithDataPage</title>
 
-        <div>
-            <h2>partwo</h2>
-            <iframe src='bubble.html' title="bubblePlot" width = "80%" height = "80%" frameBorder="0"></iframe> 
-        </div>
-        
-        <div>
-            <h2>parthree</h2>
-            <iframe src='map.html' title="chloroplethMap" width = "80%" height = "80%" frameBorder="0"></iframe> 
-        </div>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1 id="pageTitle"> Voting Trends in the United States and Virginia </h1>
+  <h2 id="subTitle"> Explore different voting trends through interactive visualizations! </h2>
+  <div class="sectionParts">
+
+    <div class="parts">
+      <div class="titlePlot">
+        <h2 class="plotTitles">Does frequency of voting change with income and education levels? - United States Voters</h2>
+
+        <iframe src='categories.html' title="categoriesPlot" width="1000px" height="650px" frameBorder="0"></iframe>
+
+      </div>
+
+      <div class="description">
+
+        <ul class="featureList">
+          <li>Hover over ribbon for counts</li>
+          <li>Click and drag sections for different perspectives</li>
+        </ul>
+
+        <p class="explanationsExceed">How does frequency of voting change according to voter education and income levels? The higher level of education an individual has, the more likely they are to always vote. However, there are not significantly large differences between voting patterns across education levels. Additionally, there is not a strong relationship between voting consistency and income; across all income categories, a majority of people are sporadic voters. A slight difference in the breakdown between rare voters and always voters is evident in the extreme income brackets: people who earn $125k or more are more likely to always vote than to never vote, while people who earn less than $40k are more likely to rarely vote than to always vote. 
+
+</p>
+      </div>
+
     </div>
-    </body>
+
+    <div class="parts">
+      <div class="titlePlot">
+        <h2 class="plotTitles">How did voter turnout and absentee voting change in Virginia General Elections
+from 2014 to 2022?</h2>
+
+        <iframe src='bubble.html' title="bubblePlot" width="1000px" height="650px" frameBorder="0"></iframe>
+
+      </div>
+
+      <div class="description">
+
+        <ul class="featureList">
+          <li>Press play for trends over time</li>
+          <li>Click on a bubble for locality name, percentage of active individuals who voted, percentage of absentee
+            ballots, and total voters per locality. </li>
+        </ul>
+
+        <p class="explanationsExceed">How have absentee voting and voter turnout changed in Virginia in the past decade? There are increased voters in Presidential election years, as is a nationwide trend. Due to the Covid-19 pandemic, the number of absentee ballots cast grew, as well as the voter turnout in many localities. Though the voter turnout decreased back to typical levels in 2022, a non-Presidential election year, the number of absentee ballots cast remained higher than before the 2020 election for most localities. </p>
+      </div>
+
+    </div>
+
+    <div class="parts">
+      <div class="titlePlot">
+        <h2 class="plotTitles">What did voter turnout look like in cities and counties in Virginia in the 2022 general
+election?</h2>
+
+        <iframe src='map.html' title="chloroplethMap" width="1000px" height="500px" frameBorder="0"></iframe>
+
+      </div>
+
+      <div class="description">
+
+        <ul class="featureList">
+          <li>Hover over locality for name</li>
+          <li>Click on locality for Percent Turnout</li>
+        </ul>
+
+        <p class="explanationsExceed">How do voting trends vary across the state of Virginia? Voter turnout in Virginia varies by area of the state. The lowest areas of voter turnout are in southwest Virginia and along the Chesapeake Bay, while the areas of highest voter turnout are spread throughout central and northern Virginia. Additionally, many cities, such as Roanoke and Harrisonburg, had low voter turnout, even if the counties that they are situated in have high voter turnout. </p>
+      </div>
+    </div>
+
+    
+    <div id ="exceedPart">
+        <h2 id = "exceedTitle">Which elements are "exceeding expectations?"</h2>
+
+        <p class="explanationsExceed">To exceed expectations, I styled the web page and added information about utilizing the visualizations’ interactivity features. I styled the web page into different sections so that it is clear which description, title, and features go with each visualization. Additionally, I changed the colors of different elements of the web page in order to create sectioning as well as draw the viewers eyes downwards with a gradually lighter blue color scheme. I am pretty familiar with HTML and CSS so I didn’t face many challenges in executing this. One small thing that I ran into was that you can’t proportionally size down the visualizations, they have to have a baseline width/height of about 600px and any smaller will require that you scroll through the visualization. I originally wanted to place the visualizations next to each other, since I envisioned viewers being able to see all three visualizations without having to scroll, however, that was not possible due to the size considerations of the visualizations. I believe that the addition of description of how to utilize the interactive visualization, such as hover and clicking, increased effectiveness of the visualizations. Without those explicit instructions, it is possible that viewers would not think to attempt interacting with the visualizations as they might think that they are static pictures. Additionally, I think the use of color and sections makes the site look cleaner and more easily understood than if all the elements were just placed on the page without any styling or organization. </p>
+      </div>
+      
+  </div>
+</body>
+
 </html>
