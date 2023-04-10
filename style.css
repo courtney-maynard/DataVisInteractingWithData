@@ -1,0 +1,73 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/*titles/headings */
+#pageTitle{
+  text-align: center;
+
+  background-color: #1a4384;
+  color: white;
+  font-size: 80px;
+  
+}
+#subTitle{
+  text-align: center;
+  align-content: center;
+  background-color: #697ab0 ;
+  color: white;
+  font-size: 40px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  
+}
+.plotTitles{
+  font-size: 30px;
+}
+
+/*descriptions*/
+.featureList{
+  font-size: 25px;
+}
+.explanationsExceed{
+  font-size: 20px;
+}
+
+#exceedPart{
+  color: black;
+  background-color: #d1dbe6;
+  padding-left: 2%;
+  padding-right: 2%;
+  
+}
+
+/*organizational parts*/
+.sectionParts{
+  display: flex;
+  flex-direction: column;
+}
+
+.parts{
+  display: flex;
+  padding-left:2%;
+  padding-right: 2%;
+  padding-top: 0%;
+  margin-bottom: 5%;
+  align-content: center;
+
+  background-color: #aebce5;
+  color: white;
+}
+
+.description{
+  margin-top: 10%;
+  margin-left: 2%;
+  margin-right: 2%;
+  
+}
+
+.titlePlot{
+  margin-top: 1%;
+}
